@@ -19,4 +19,4 @@ try{
     echo "Erro al conectar a la base de datos";
 }
 
-$URL = "http://localhost/www.sistemadeventas.com";
+$URL = "http://localhost/sistemadeventas";

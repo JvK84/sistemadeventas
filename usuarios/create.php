@@ -1,7 +1,7 @@
 <?php
-include('app/config.php');
-include('layout/sesion.php');
-include('layout/parte1.php');
+include('../app/config.php');
+include('../layout/sesion.php');
+include('../layout/parte1.php');
 ?>
 
   <!-- Content Wrapper. Contains page content -->
@@ -11,7 +11,7 @@ include('layout/parte1.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Bienvenido al sistema de ventas</h1>
+            <h1 class="m-0">Registro de usuarios</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -29,5 +29,5 @@ include('layout/parte1.php');
   <!-- /.content-wrapper -->
 
 <?php
-include('layout/parte2.php');
+include('../layout/parte2.php');
 ?>
