@@ -19,13 +19,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="hold-transition sidebar-mini">
-<script>
-  Swal.fire({
-  title: "Login correcto",
-  text: "¡Bienvenido al sistema <?php echo $email_sesion?>!",
-  icon: "success"
-});
-</script>
 <div class="wrapper">
 
   <!-- Navbar -->

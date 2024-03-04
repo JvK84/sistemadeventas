@@ -37,22 +37,22 @@ include('../layout/parte1.php');
             <div class="card-body" style="display: block;">
               <div class="row">
                 <div class="col-md-12">
-                  <form action="../app/controllers/usuarios/create.php">
+                  <form action="../app/controllers/usuarios/create.php" method="POST">
                     <div class="form-group">
                       <label for="">Nombre</label>
-                      <input type="text" class="form-control" placeholder="nombre del nuevo usuario">
+                      <input type="text" name="nombres" class="form-control" placeholder="nombre del nuevo usuario">
                     </div>
                     <div class="form-group">
                       <label for="">Email</label>
-                      <input type="email" class="form-control" placeholder="email del nuevo usuario">
+                      <input type="email" name="email" class="form-control" placeholder="email del nuevo usuario">
                     </div>
                     <div class="form-group">
                       <label for="">Contraseña</label>
-                      <input type="password" class="form-control">
+                      <input type="password" name="password_user" class="form-control">
                     </div>
                     <div class="form-group">
                       <label for="">Confirme la ontraseña</label>
-                      <input type="password" class="form-control">
+                      <input type="password" name="password_repeat" class="form-control">
                     </div>
                     <div class="form-group">
                       <button class="btn btn-secondary">Cancelar</button>
