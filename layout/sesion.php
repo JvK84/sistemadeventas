@@ -10,5 +10,3 @@ if(isset($_SESSION['sesion_email'])) {
   echo "no existe la sesion";
   header('Location: '.$URL.'/login');
 }
-
-?>

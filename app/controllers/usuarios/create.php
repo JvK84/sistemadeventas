@@ -28,4 +28,3 @@ if($password_user == $password_repeat){
       $_SESSION['mensaje'] = "Error! Las contraseñas no son iguales";
       header('Location: '.$URL.'/usuarios/create.php');
 }
-?>

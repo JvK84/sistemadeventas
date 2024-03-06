@@ -23,3 +23,20 @@ $URL = "http://localhost/sistemadeventas";
 
 date_default_timezone_set("Europe/Madrid");
 $fecha_hora = date('Y-m-d H:i:s');
+
+if(isset($_SESSION['mensaje'])){
+    $respuesta = $_SESSION['mensaje']; ?>
+    <script>
+      Swal.fire({
+        position:'top-end',
+        icon:'error',
+        title: '<?php echo $respuesta;?>',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    </script>
+  <?php
+    unset($_SESSION['mensaje']);
+  }
+  
+?>

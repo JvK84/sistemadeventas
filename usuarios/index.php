@@ -37,35 +37,65 @@ include('../app/controllers/usuarios/listado_usuarios.php');
             </div>
             <div class="card-body" style="display:block;">
               <table id="example1" class="table table-bordered table-striped">
-                  <thead> 
+                <thead>
                   <tr>
-                  <th><center>Nro</center></th>
-                  <th><center>Nombre</center></th>
-                  <th><center>Correo</center></th>
-                </tr>
-                  </thead>
-                  <tbody>
+                    <th>
+                      <center>Nro</center>
+                    </th>
+                    <th>
+                      <center>Nombre</center>
+                    </th>
+                    <th>
+                      <center>Correo</center>
+                    </th>
+                    <th>
+                      <center>Acciones</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
                   <?php
-                  $contador= 0;
-                  foreach ($usuarios_datos as $usuarios_dato) { ?>
+                  $contador = 0;
+                  foreach ($usuarios_datos as $usuarios_dato) {
+                    $id_usuario = $usuarios_dato['id_usuario']; ?>
                     <tr>
-                      <td><center><?php echo $contador = $contador + 1; ?></center></td>
+                      <td>
+                        <center><?php echo $contador = $contador + 1; ?></center>
+                      </td>
                       <td><?php echo $usuarios_dato['nombres']; ?></td>
                       <td><?php echo $usuarios_dato['email']; ?></td>
+                      <td>
+                        <center>
+                          <div class="btn-group">
+                            <a href="show.php?id=<?php echo $id_usuario; ?>" type="button" class="btn btn-info"><i class="fa fa-eye"></i> Ver</a>
+                            <a href="show.php" type="button" class="btn btn-success"><i class="fa fa-pencil-alt"></i> Editar</a>
+                            <a href="show.php" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Borrar</a>
+                          </div>
+                        </center>
+                      </td>
                     </tr>
 
                   <?php
                   }
                   ?>
                 </tbody>
-                  <tfoot>
+                <tfoot>
                   <tr>
-                  <th><center>Nro</center></th>
-                  <th><center>Nombre</center></th>
-                  <th><center>Correo</center></th>
+                    <th>
+                      <center>Nro</center>
+                    </th>
+                    <th>
+                      <center>Nombre</center>
+                    </th>
+                    <th>
+                      <center>Correo</center>
+                    </th>
+                    <th>
+                      <center>Acciones</center>
+                    </th>
                   </tr>
-                  </tfoot>
-                </table>
+                </tfoot>
+              </table>
             </div>
 
           </div>
@@ -83,10 +113,43 @@ include('../layout/parte2.php');
 ?>
 
 <script>
-  $(function () {
+  $(function() {
     $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      "language": {
+        "emptyTable": "No hay información",
+        "info": "Mostrando _START_ a _END_ de _TOTAL_ Usuarios",
+        "infoEmpty": "Mostrando 0 a 0 de 0 Usuarios",
+        "infoFiltered": "(Filtrado de _MAX_ total Usuarios)",
+        "inforPostFix": "",
+        "thousands": ",",
+        "lengthMenu": "Mostrar _MENU_ Usuarios",
+        "loadingRecords": "Cargando...",
+        "processing": "Procesando...",
+        "search": "Buscador:",
+        "zeroRecords": "Sin resultados encontrados",
+        "paginate": {
+          "first": "Primero",
+          "last": "Último",
+          "next": "Siguiente",
+          "previous": "Anterior"
+        }
+      },
+      "responsive": true,
+      "lengthChange": true,
+      "autoWidth": true,
+      "buttons": [{
+        text: 'Copiar',
+        extend: 'copy',
+      }, {
+        extend: 'pdf',
+      }, {
+        extend: 'csv',
+      }, {
+        extend: 'excel',
+      }, {
+        text: 'Imprimir',
+        extend: 'print',
+      }]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
   });
 </script>
