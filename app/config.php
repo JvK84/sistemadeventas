@@ -20,3 +20,6 @@ try{
 }
 
 $URL = "http://localhost/sistemadeventas";
+
+date_default_timezone_set("Europe/Madrid");
+$fecha_hora = date('Y-m-d H:i:s');
