@@ -68,7 +68,7 @@ include('../app/controllers/usuarios/listado_usuarios.php');
                         <center>
                           <div class="btn-group">
                             <a href="show.php?id=<?php echo $id_usuario; ?>" type="button" class="btn btn-info"><i class="fa fa-eye"></i> Ver</a>
-                            <a href="show.php" type="button" class="btn btn-success"><i class="fa fa-pencil-alt"></i> Editar</a>
+                            <a href="update.php?id=<?php echo $id_usuario; ?>" type="button" class="btn btn-success"><i class="fa fa-pencil-alt"></i> Editar</a>
                             <a href="show.php" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Borrar</a>
                           </div>
                         </center>
@@ -109,6 +109,8 @@ include('../app/controllers/usuarios/listado_usuarios.php');
 <!-- /.content-wrapper -->
 
 <?php
+session_start();
+include('../layout/mensajes.php');
 include('../layout/parte2.php');
 ?>
 

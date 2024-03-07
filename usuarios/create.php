@@ -57,7 +57,7 @@ include('../layout/parte1.php');
                     </div>
                     <div class="form-group">
                       <a href="index.php" class="btn btn-secondary">Cancelar</a>
-                      <button class="btn btn-primary">Guardar</button>
+                      <button type="submit" class="btn btn-primary">Guardar</button>
                     </div>
                   </form>
                 </div>

@@ -64,23 +64,11 @@
     </div>
     <!-- /.card -->
   </div>
-  <!-- /.login-box -->
   <?php
   session_start();
-  if (isset($_SESSION['mensaje'])) {
-    $respuesta = $_SESSION['mensaje']; ?>
-    <script>
-      Swal.fire({
-        position: "top-end",
-        title: "<?php echo $respuesta; ?>",
-        showConfirmButton: false,
-        timer: 1500,
-        icon: "error"
-      });
-    </script>
-  <?php
-  }
+  include('../layout/mensajes.php');
   ?>
+  <!-- /.login-box -->
   <!-- jQuery -->
   <script src="../public/templates/plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->

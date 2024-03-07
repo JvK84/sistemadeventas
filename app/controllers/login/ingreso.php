@@ -22,15 +22,16 @@ foreach($usuarios as $usuario){
     $password_user_tabla = $usuario['password_user'];
 }
 
-if($contador == 0 && (password_verify($password_user, $password_user_tabla))){
-    echo "Datos incorrectos, vuelva a intentarlo";
+if($contador > 0 && (password_verify($password_user, $password_user_tabla))){
     session_start();
-    $_SESSION['mensaje'] = "Error: login incorrecto";
-    header('Location: '.$URL.'/login');
-} else {
-    echo "Datos correctos";
-    session_start();
+    $_SESSION['mensaje'] = "Login correcto";
+    $_SESSION['icono'] = "success";
     $_SESSION['sesion_email'] = $email;
     $_SESSION['sesion_nombre'] = $nombres;
-    header('Location: '. $URL .'/index.php');
+    header('Location: '.$URL.'/index.php');
+} else {
+    session_start();
+    $_SESSION['mensaje'] = "Error: login incorrecto";
+    $_SESSION['icono'] = "error";
+    header('Location: '.$URL.'/login');
 }
