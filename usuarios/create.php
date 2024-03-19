@@ -41,19 +41,19 @@ include('../layout/parte1.php');
                   <form action="../app/controllers/usuarios/create.php" method="POST">
                     <div class="form-group">
                       <label for="">Nombre</label>
-                      <input type="text" name="nombres" class="form-control" placeholder="nombre del nuevo usuario">
+                      <input type="text" name="nombres" class="form-control" placeholder="nombre del nuevo usuario" required>
                     </div>
                     <div class="form-group">
                       <label for="">Email</label>
-                      <input type="email" name="email" class="form-control" placeholder="email del nuevo usuario">
+                      <input type="email" name="email" class="form-control" placeholder="email del nuevo usuario" required>
                     </div>
                     <div class="form-group">
                       <label for="">Contraseña</label>
-                      <input type="password" name="password_user" class="form-control">
+                      <input type="password" name="password_user" class="form-control" required>
                     </div>
                     <div class="form-group">
                       <label for="">Confirme la ontraseña</label>
-                      <input type="password" name="password_repeat" class="form-control">
+                      <input type="password" name="password_repeat" class="form-control" required>
                     </div>
                     <div class="form-group">
                       <a href="index.php" class="btn btn-secondary">Cancelar</a>
@@ -75,5 +75,6 @@ include('../layout/parte1.php');
 <!-- /.content-wrapper -->
 
 <?php
+include('../layout/mensajes.php');
 include('../layout/parte2.php');
 ?>

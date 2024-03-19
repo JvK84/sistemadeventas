@@ -21,10 +21,12 @@ if($password_user == $password_repeat){
       $sentencia->execute();
       session_start();
       $_SESSION['mensaje'] = "Se registro al usuario de manera correcta";
-      header('Location: '.$URL.'/usuarios/create.php');
+      $_SESSION['icono'] = "success";
+      header('Location: '.$URL.'/usuarios/index.php');
 } else {
       //echo "error, las contraseñas no son iguales";
       session_start();
       $_SESSION['mensaje'] = "Error! Las contraseñas no son iguales";
+      $_SESSION['icono'] = "error";
       header('Location: '.$URL.'/usuarios/create.php');
 }

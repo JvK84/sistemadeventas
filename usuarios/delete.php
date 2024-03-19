@@ -14,7 +14,7 @@ include('../app/controllers/usuarios/update_usuario.php');
             <div class="container-fluid">
                   <div class="row mb-2">
                         <div class="col-sm-6">
-                              <h1 class="m-0">Actualización</h1>
+                              <h1 class="m-0">Eliminar usuario</h1>
                         </div><!-- /.col -->
                   </div><!-- /.row -->
             </div><!-- /.container-fluid -->
@@ -27,9 +27,9 @@ include('../app/controllers/usuarios/update_usuario.php');
 
                   <div class="row">
                         <div class="col-md-6">
-                              <div class="card card-success">
+                              <div class="card card-danger">
                                     <div class="card-header">
-                                          <h3 class="card-title">Actualizar datos del usuario</h3>
+                                          <h3 class="card-title">¿Está seguro de eliminar el usuario?</h3>
                                           <div class="card-tools">
                                                 <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
                                                 </button>
@@ -40,7 +40,7 @@ include('../app/controllers/usuarios/update_usuario.php');
                                     <div class="card-body" style="display: block;">
                                           <div class="row">
                                                 <div class="col-md-12">
-                                                      <form action="../app/controllers/usuarios/update.php" method="POST">
+                                                      <form action="../app/controllers/usuarios/delete_usuario.php" method="POST">
                                                             <input type="text" name="id_usuario" class="form-control" value="<?php echo $id_usuario_get; ?>" hidden>
                                                             <div class="form-group">
                                                                   <label for="">Nombre</label>
@@ -51,16 +51,8 @@ include('../app/controllers/usuarios/update_usuario.php');
                                                                   <input type="email" name="email" class="form-control" value="<?php echo $email; ?>" required>
                                                             </div>
                                                             <div class="form-group">
-                                                                  <label for="">Contraseña</label>
-                                                                  <input type="password" name="password_user" class="form-control" required>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                  <label for="">Confirme la ontraseña</label>
-                                                                  <input type="password" name="password_repeat" class="form-control" required>
-                                                            </div>
-                                                            <div class="form-group">
                                                                   <a href="index.php" class="btn btn-secondary">Cancelar</a>
-                                                                  <button type="submit" class="btn btn-success">Actualizar</button>
+                                                                  <button class="btn btn-danger">Eliminar</button>
                                                             </div>
                                                       </form>
 

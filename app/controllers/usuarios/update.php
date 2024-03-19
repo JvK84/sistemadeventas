@@ -22,7 +22,7 @@ if($password_user == $password_repeat && $password_user != ""){
       $sentencia->bindParam('email',$email);
       $sentencia->bindParam('password_user',$password_user);
       $sentencia->bindParam('fyh_actualizacion',$fecha_hora);
-      $sentencia->bindParam('id_usuario',$fecha_hora);
+      $sentencia->bindParam('id_usuario',$id_usuario);
       $sentencia->execute();
       session_start();
       $_SESSION['mensaje'] = "Actualización de los datos del usuario";
