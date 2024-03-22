@@ -24,7 +24,6 @@ if($password_user == $password_repeat){
       $_SESSION['icono'] = "success";
       header('Location: '.$URL.'/usuarios/index.php');
 } else {
-      //echo "error, las contraseñas no son iguales";
       session_start();
       $_SESSION['mensaje'] = "Error! Las contraseñas no son iguales";
       $_SESSION['icono'] = "error";
