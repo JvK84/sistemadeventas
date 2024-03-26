@@ -44,11 +44,15 @@ include('../app/controllers/usuarios/update_usuario.php');
                                                             <input type="text" name="id_usuario" class="form-control" value="<?php echo $id_usuario_get; ?>" hidden>
                                                             <div class="form-group">
                                                                   <label for="">Nombre</label>
-                                                                  <input type="text" name="nombres" class="form-control" value="<?php echo $nombres; ?>" required>
+                                                                  <input type="text" name="nombres" class="form-control" value="<?php echo $nombres; ?>" disabled>
                                                             </div>
                                                             <div class="form-group">
                                                                   <label for="">Email</label>
-                                                                  <input type="email" name="email" class="form-control" value="<?php echo $email; ?>" required>
+                                                                  <input type="email" name="email" class="form-control" value="<?php echo $email; ?>" disabled>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                  <label for="">Rol del usuario</label>
+                                                                  <input type="text" name="rol" class="form-control" value="<?php echo $rol; ?>" disabled>
                                                             </div>
                                                             <div class="form-group">
                                                                   <a href="index.php" class="btn btn-secondary">Cancelar</a>

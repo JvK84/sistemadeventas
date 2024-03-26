@@ -49,6 +49,9 @@ include('../app/controllers/usuarios/listado_usuarios.php');
                       <center>Correo</center>
                     </th>
                     <th>
+                      <center>Rol</center>
+                    </th>
+                    <th>
                       <center>Acciones</center>
                     </th>
                   </tr>
@@ -64,6 +67,7 @@ include('../app/controllers/usuarios/listado_usuarios.php');
                       </td>
                       <td><?php echo $usuarios_dato['nombres']; ?></td>
                       <td><?php echo $usuarios_dato['email']; ?></td>
+                      <td><?php echo $usuarios_dato['rol']; ?></td>
                       <td>
                         <center>
                           <div class="btn-group">
@@ -89,6 +93,9 @@ include('../app/controllers/usuarios/listado_usuarios.php');
                     </th>
                     <th>
                       <center>Correo</center>
+                    </th>
+                    <th>
+                      <center>Rol</center>
                     </th>
                     <th>
                       <center>Acciones</center>
