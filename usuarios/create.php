@@ -27,8 +27,8 @@ include('../app/controllers/roles/listado_roles.php');
 
       <div class="row">
         <div class="col-md-6">
-          <div class="card card-primary">
-            <div class="card-header">
+          <div class="card">
+            <div class="card-header" style="background-color: #394E75; color: white">
               <h3 class="card-title">Introduzca los datos del nuevo usuario</h3>
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -72,7 +72,7 @@ include('../app/controllers/roles/listado_roles.php');
                     </div>
                     <div class="form-group">
                       <a href="index.php" class="btn btn-secondary">Cancelar</a>
-                      <button type="submit" class="btn btn-primary">Guardar</button>
+                      <button type="submit" class="btn" style="background-color: #394E75; color: white">Guardar</button>
                     </div>
                   </form>
                 </div>

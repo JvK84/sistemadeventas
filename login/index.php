@@ -26,7 +26,7 @@
       <img src="https://img.freepik.com/free-photo/computer-security-with-login-password-padlock_107791-16191.jpg?w=1060&t=st=1709281042~exp=1709281642~hmac=25ca1a9fb05a08540b6e37443eeb1df99e997f72d92257ed54376369e50b001d" alt="" width="300px">
     </center>
     <br>
-    <div class="card card-outline card-primary">
+    <div class="card card-outline" >
       <div class="card-header text-center">
         <a href="../public/templates/index2.html" class="h1"><b>Sistema de </b>VENTAS</a>
       </div>
@@ -54,7 +54,7 @@
           <div class="row">
             <!-- /.col -->
             <div class="col-12">
-              <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+              <button type="submit" class="btn btn-block" style="background-color: #394E75; color: white">Sign In</button>
             </div>
             <!-- /.col -->
           </div>

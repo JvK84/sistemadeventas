@@ -26,8 +26,8 @@ include('../app/controllers/usuarios/listado_usuarios.php');
 
       <div class="row">
         <div class="col-md-8">
-          <div class="card card-primary">
-            <div class="card-header">
+          <div class="card">
+            <div class="card-header" style="background-color: #394E75; color: white">
               <h3 class="card-title">Usuarios registrados</h3>
               <div class="card-tools">
                 <button class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -71,9 +71,9 @@ include('../app/controllers/usuarios/listado_usuarios.php');
                       <td>
                         <center>
                           <div class="btn-group">
-                            <a href="show.php?id=<?php echo $id_usuario; ?>" type="button" class="btn btn-info"><i class="fa fa-eye"></i> Ver</a>
-                            <a href="update.php?id=<?php echo $id_usuario; ?>" type="button" class="btn btn-success"><i class="fa fa-pencil-alt"></i> Editar</a>
-                            <a href="delete.php?id=<?php echo $id_usuario; ?>" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Borrar</a>
+                            <a href="show.php?id=<?php echo $id_usuario; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-eye"></i> Ver</a>
+                            <a href="update.php?id=<?php echo $id_usuario; ?>" type="button" class="btn" style="background-color: #993C7E; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
+                            <a href="delete.php?id=<?php echo $id_usuario; ?>" type="button" class="btn" style="background-color: #D23927; color: white"><i class="fa fa-trash"></i> Borrar</a>
                           </div>
                         </center>
                       </td>
