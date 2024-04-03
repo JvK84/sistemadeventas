@@ -4,6 +4,7 @@ include('layout/sesion.php');
 include('layout/parte1.php');
 
 include('app/controllers/usuarios/listado_usuarios.php');
+include('app/controllers/roles/listado_roles.php');
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -13,7 +14,7 @@ include('app/controllers/usuarios/listado_usuarios.php');
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">Bienvenido al sistema de ventas</h1>
+          <h1 class="m-0">Bienvenido al sistema de ventas - <?php echo $_SESSION['sesion_rol']; ?></h1>
         </div><!-- /.col -->
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
@@ -50,20 +51,20 @@ include('app/controllers/usuarios/listado_usuarios.php');
           <div class="small-box" style="background-color: #394E75; color: white">
             <div class="inner">
               <?php
-              $contador_de_usuarios = 0;
-              foreach($usuarios_datos as $usuarios_dato){
-                $contador_de_usuarios = $contador_de_usuarios + 1;
+              $contador_de_roles = 0;
+              foreach($roles_datos as $roles_dato){
+                $contador_de_roles = $contador_de_roles + 1;
               }
               ?>
-              <h3><?php echo $contador_de_usuarios; ?></h3>
+              <h3><?php echo $contador_de_roles; ?></h3>
               <p>Roles Registrados</p>
             </div>
-            <a href="<?php echo $URL;?>/usuarios/create.php">
+            <a href="<?php echo $URL;?>/roles/create.php">
               <div class="icon">
                 <i class="fas fa-user-plus"></i>
               </div>
             </a>
-            <a href="<?php echo $URL;?>/usuarios" class="small-box-footer">Más información <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?php echo $URL;?>/roles" class="small-box-footer">Más información <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
 
