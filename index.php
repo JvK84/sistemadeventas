@@ -26,7 +26,7 @@ include('app/controllers/usuarios/listado_usuarios.php');
 
       <div class="row">
         <div class="col-lg-3 col-6">
-          <div class="small-box bg-warning">
+        <div class="small-box" style="background-color: #394E75; color: white">
             <div class="inner">
               <?php
               $contador_de_usuarios = 0;
@@ -47,7 +47,7 @@ include('app/controllers/usuarios/listado_usuarios.php');
         </div>
 
         <div class="col-lg-3 col-6">
-          <div class="small-box bg-warning">
+          <div class="small-box" style="background-color: #394E75; color: white">
             <div class="inner">
               <?php
               $contador_de_usuarios = 0;

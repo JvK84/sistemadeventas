@@ -28,7 +28,7 @@ include('../app/controllers/usuarios/update_usuario.php');
                   <div class="row">
                         <div class="col-md-6">
                               <div class="card">
-                                    <div class="card-header" style="background-color: #D23927; color:white">
+                                    <div class="card-header" style="background-color: #394E75; color:white">
                                           <h3 class="card-title">¿Está seguro de eliminar el usuario?</h3>
                                           <div class="card-tools">
                                                 <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -56,7 +56,7 @@ include('../app/controllers/usuarios/update_usuario.php');
                                                             </div>
                                                             <div class="form-group">
                                                                   <a href="index.php" class="btn btn-secondary">Cancelar</a>
-                                                                  <button class="btn" style="background-color: #D23927; color:white">Eliminar</button>
+                                                                  <button class="btn" style="background-color: #394E75; color:white">Eliminar</button>
                                                             </div>
                                                       </form>
 

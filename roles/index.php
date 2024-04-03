@@ -63,7 +63,7 @@ include('../app/controllers/roles/listado_roles.php');
                       <td>
                         <center>
                           <div class="btn-group">
-                            <a href="update.php?id=<?php echo $id_rol; ?>" type="button" class="btn" style="background-color: #993C7E; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
+                            <a href="update.php?id=<?php echo $id_rol; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
                           </div>
                         </center>
                       </td>
