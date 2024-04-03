@@ -100,7 +100,6 @@ include('../app/controllers/roles/listado_roles.php');
 <!-- /.content-wrapper -->
 
 <?php
-session_start();
 include('../layout/mensajes.php');
 include('../layout/parte2.php');
 ?>
