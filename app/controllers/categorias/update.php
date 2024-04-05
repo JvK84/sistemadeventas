@@ -5,7 +5,6 @@ include('../../config.php');
 $id_categoria = $_POST['id_categoria'];
 $categoria = $_POST['categoria'];
 
-$password_user = password_hash($password_user, PASSWORD_DEFAULT);
 $sentencia = $pdo->prepare("UPDATE tb_categorias
 SET   nombre_categoria=:nombre_categoria, 
       fyh_actualizacion=:fyh_actualizacion

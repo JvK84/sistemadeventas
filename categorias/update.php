@@ -2,7 +2,7 @@
 include('../app/config.php');
 include('../layout/sesion.php');
 include('../layout/parte1.php');
-include('../app/controllers/categorias/update_categorias.php');
+include('../app/controllers/categorias/show_categoria.php');
 
 ?>
 
@@ -43,7 +43,7 @@ include('../app/controllers/categorias/update_categorias.php');
                     <div class="form-group">
                       <input type="text" name="id_categoria" value="<?php echo $id_categoria_get; ?>" hidden>
                       <label for="">Nombre de la categoría</label>
-                      <input type="text" name="categoria" class="form-control" value="<?php echo $categoria; ?>">
+                      <input type="text" name="categoria" class="form-control" value="<?php echo $nombres; ?>">
                     </div>
                     <div class="form-group">
                       <a href="index.php" class="btn btn-secondary">Cancelar</a>
