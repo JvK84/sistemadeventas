@@ -41,10 +41,10 @@ include('../app/controllers/categorias/show_categoria.php');
                                           <div class="row">
                                                 <div class="col-md-12">
                                                       <form action="../app/controllers/categorias/delete_categoria.php" method="POST">
-                                                            <input type="text" name="id_categoria" class="form-control" value="<?php echo $id_categoria_get; ?>" hidden>
+                                                            <input type="text" name="id_categoria" class="form-control" value="<?= $id_categoria_get; ?>" hidden>
                                                             <div class="form-group">
                                                                   <label for="">Nombre</label>
-                                                                  <input type="text" name="categoria" class="form-control" value="<?php echo $nombres; ?>" disabled>
+                                                                  <input type="text" name="categoria" class="form-control" value="<?= $nombres; ?>" disabled>
                                                             </div>
                                                             <div class="form-group">
                                                                   <a href="index.php" class="btn btn-secondary">Cancelar</a>

@@ -42,7 +42,7 @@ include('../app/controllers/categorias/show_categoria.php');
                                                 <div class="col-md-12">
                                                       <div class="form-group">
                                                             <label for="">Nombre de la categoría</label>
-                                                            <input type="text" name="nombres" class="form-control" value="<?php echo $nombres; ?>" disabled>
+                                                            <input type="text" name="nombres" class="form-control" value="<?= $nombres; ?>" disabled>
                                                       </div>
                                                       <div class="form-group">
                                                             <a href="index.php" class="btn btn-secondary">Volver</a>

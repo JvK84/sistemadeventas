@@ -42,9 +42,9 @@ include('../app/controllers/roles/update_roles.php');
                 <div class="col-md-12">
                   <form action="../app/controllers/roles/update.php" method="POST">
                     <div class="form-group">
-                      <input type="text" name="id_rol" value="<?php echo $id_rol_get; ?>" hidden>
+                      <input type="text" name="id_rol" value="<?= $id_rol_get; ?>" hidden>
                       <label for="">Nombre del rol</label>
-                      <input type="text" name="rol" class="form-control" value="<?php echo $rol; ?>">
+                      <input type="text" name="rol" class="form-control" value="<?= $rol; ?>">
                     </div>
                     <div class="form-group">
                       <a href="index.php" class="btn btn-secondary">Cancelar</a>

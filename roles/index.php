@@ -57,13 +57,13 @@ include('../app/controllers/roles/listado_roles.php');
                     $id_rol = $rol_dato['id_rol']; ?>
                     <tr>
                       <td>
-                        <center><?php echo $contador = $contador + 1; ?></center>
+                        <center><?= $contador = $contador + 1; ?></center>
                       </td>
-                      <td><?php echo $rol_dato['rol']; ?></td>
+                      <td><?= $rol_dato['rol']; ?></td>
                       <td>
                         <center>
                           <div class="btn-group">
-                            <a href="update.php?id=<?php echo $id_rol; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
+                            <a href="update.php?id=<?= $id_rol; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
                           </div>
                         </center>
                       </td>

@@ -41,18 +41,18 @@ include('../app/controllers/usuarios/update_usuario.php');
                                           <div class="row">
                                                 <div class="col-md-12">
                                                       <form action="../app/controllers/usuarios/delete_usuario.php" method="POST">
-                                                            <input type="text" name="id_usuario" class="form-control" value="<?php echo $id_usuario_get; ?>" hidden>
+                                                            <input type="text" name="id_usuario" class="form-control" value="<?= $id_usuario_get; ?>" hidden>
                                                             <div class="form-group">
                                                                   <label for="">Nombre</label>
-                                                                  <input type="text" name="nombres" class="form-control" value="<?php echo $nombres; ?>" disabled>
+                                                                  <input type="text" name="nombres" class="form-control" value="<?= $nombres; ?>" disabled>
                                                             </div>
                                                             <div class="form-group">
                                                                   <label for="">Email</label>
-                                                                  <input type="email" name="email" class="form-control" value="<?php echo $email; ?>" disabled>
+                                                                  <input type="email" name="email" class="form-control" value="<?= $email; ?>" disabled>
                                                             </div>
                                                             <div class="form-group">
                                                                   <label for="">Rol del usuario</label>
-                                                                  <input type="text" name="rol" class="form-control" value="<?php echo $rol; ?>" disabled>
+                                                                  <input type="text" name="rol" class="form-control" value="<?= $rol; ?>" disabled>
                                                             </div>
                                                             <div class="form-group">
                                                                   <a href="index.php" class="btn btn-secondary">Cancelar</a>

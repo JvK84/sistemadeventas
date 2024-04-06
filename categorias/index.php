@@ -57,15 +57,15 @@ include('../app/controllers/categorias/listado_categorias.php');
                     $id_categoria = $categorias_dato['id_categoria']; ?>
                     <tr>
                       <td>
-                        <center><?php echo $contador = $contador + 1; ?></center>
+                        <center><?= $contador = $contador + 1; ?></center>
                       </td>
-                      <td><?php echo $categorias_dato['nombre_categoria']; ?></td>
+                      <td><?= $categorias_dato['nombre_categoria']; ?></td>
                       <td>
                         <center>
                           <div class="btn-group">
-                            <a href="show.php?id_categoria=<?php echo $id_categoria; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-eye"></i> Ver</a>
-                            <a href="update.php?id_categoria=<?php echo $id_categoria; ?>" type="button" class="btn" style="background-color: #644B86; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
-                            <a href="delete.php?id_categoria=<?php echo $id_categoria; ?>" type="button" class="btn" style="background-color: #993C7E; color: white"><i class="fa fa-trash"></i> Borrar</a>
+                            <a href="show.php?id_categoria=<?= $id_categoria; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-eye"></i> Ver</a>
+                            <a href="update.php?id_categoria=<?= $id_categoria; ?>" type="button" class="btn" style="background-color: #644B86; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
+                            <a href="delete.php?id_categoria=<?= $id_categoria; ?>" type="button" class="btn" style="background-color: #993C7E; color: white"><i class="fa fa-trash"></i> Borrar</a>
                           </div>
                         </center>
                       </td>

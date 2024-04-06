@@ -46,6 +46,9 @@ include('../app/controllers/almacen/listado_productos.php');
                       <center>Nombre del producto</center>
                     </th>
                     <th>
+                      <center>Imagen del producto</center>
+                    </th>
+                    <th>
                       <center>Acciones</center>
                     </th>
                   </tr>
@@ -57,15 +60,16 @@ include('../app/controllers/almacen/listado_productos.php');
                     $id_producto = $almacen_dato['id_producto']; ?>
                     <tr>
                       <td>
-                        <center><?php echo $contador = $contador + 1; ?></center>
+                        <center><?= $contador = $contador + 1; ?></center>
                       </td>
-                      <td><?php echo $almacen_dato['nombre']; ?></td>
+                      <td><?= $almacen_dato['nombre']; ?></td>
+                      <td><img src="<?= $URL."/almacen/img_productos/". $almacen_dato['imagen']; ?>" width="100px"></td>
                       <td>
                         <center>
                           <div class="btn-group">
-                            <a href="show.php?id_producto=<?php echo $id_producto; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-eye"></i> Ver</a>
-                            <a href="update.php?id_producto=<?php echo $id_producto; ?>" type="button" class="btn" style="background-color: #644B86; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
-                            <a href="delete.php?id_producto=<?php echo $id_producto; ?>" type="button" class="btn" style="background-color: #993C7E; color: white"><i class="fa fa-trash"></i> Borrar</a>
+                            <a href="show.php?id_producto=<?= $id_producto; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-eye"></i> Ver</a>
+                            <a href="update.php?id_producto=<?= $id_producto; ?>" type="button" class="btn" style="background-color: #644B86; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
+                            <a href="delete.php?id_producto=<?= $id_producto; ?>" type="button" class="btn" style="background-color: #993C7E; color: white"><i class="fa fa-trash"></i> Borrar</a>
                           </div>
                         </center>
                       </td>
@@ -82,6 +86,9 @@ include('../app/controllers/almacen/listado_productos.php');
                     </th>
                     <th>
                       <center>Nombre del producto</center>
+                    </th>
+                    <th>
+                      <center>Imagen del producto</center>
                     </th>
                     <th>
                       <center>Acciones</center>

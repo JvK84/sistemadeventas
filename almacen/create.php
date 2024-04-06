@@ -38,9 +38,9 @@ include('../app/controllers/almacen/listado_usuario.php');
                                     </div>
 
                                     <div class="card-body" style="display: block;">
-                                          <div class="row">
-                                                <div class="col-md-12">
-                                                      <form action="../app/controllers/almacen/create.php" method="POST">
+                                          <form action="../app/controllers/almacen/create.php" method="POST" enctype="multipart/form-data">
+                                                <div class="row">
+                                                      <div class="col-md-6">
                                                             <div class="form-group">
                                                                   <label for="">Código del producto</label>
                                                                   <input type="text" name="codigo" class="form-control" placeholder="código del producto" required>
@@ -66,9 +66,16 @@ include('../app/controllers/almacen/listado_usuario.php');
                                                                   <input type="number" name="stock_maximo" class="form-control" placeholder="Stock máximo del producto">
                                                             </div>
                                                             <div class="form-group">
+                                                                  <a href="index.php" class="btn btn-secondary">Cancelar</a>
+                                                                  <button type="submit" class="btn" style="background-color: #394E75; color: white">Guardar</button>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                            <div class="form-group">
                                                                   <label for="">Precio de compra del producto</label>
                                                                   <input type="number" name="precio_compra" class="form-control" placeholder="precio de compra del producto" required>
                                                             </div>
+
                                                             <div class="form-group">
                                                                   <label for="">Precio de venta del producto</label>
                                                                   <input type="number" name="precio_venta" class="form-control" placeholder="precio de venta del producto" required>
@@ -77,13 +84,13 @@ include('../app/controllers/almacen/listado_usuario.php');
                                                                   <label for="">Fecha de ingreso del producto</label>
                                                                   <input type="date" name="fecha_ingreso" class="form-control" placeholder="fecha de ingreso del producto" required>
                                                             </div>
-                                                            <input type="text" name="id_usuario" class="form-control" value="<?php echo $id_usuario; ?>" hidden>
+                                                            <input type="text" name="id_usuario" class="form-control" value="<?= $id_usuario; ?>" hidden>
                                                             <div class="form-group">
                                                                   <label for="">Categoría del producto</label>
                                                                   <select name="id_categoria" class="form-control">
                                                                         <?php
                                                                         foreach ($categorias_datos as $categorias_dato) { ?>
-                                                                              <option value="<?php echo $categorias_dato["id_categoria"]; ?>" required><?php echo $categorias_dato["nombre_categoria"]; ?></option>
+                                                                              <option value="<?= $categorias_dato["id_categoria"]; ?>" required><?= $categorias_dato["nombre_categoria"]; ?></option>
 
                                                                         <?php
                                                                         }
@@ -92,12 +99,37 @@ include('../app/controllers/almacen/listado_usuario.php');
                                                                   </select>
                                                             </div>
                                                             <div class="form-group">
-                                                                  <a href="index.php" class="btn btn-secondary">Cancelar</a>
-                                                                  <button type="submit" class="btn" style="background-color: #394E75; color: white">Guardar</button>
+                                                                  <label for="">Imagen del producto</label>
+                                                                  <input type="file" name="imagen" class="form-control" id="file">
+                                                                  <br>
+                                                                  <output id="list"></output>
+                                                                  <script>
+                                                                        function archivo(evt) {
+                                                                              var files = evt.target.files; // FileList object
+                                                                              // Obtenemos la imagen del campo "file".
+                                                                              for (var i = 0, f; f = files[i]; i++) {
+                                                                                    //Solo admitimos imágenes.
+                                                                                    if (!f.type.match('image.*')) {
+                                                                                          continue;
+                                                                                    }
+                                                                                    var reader = new FileReader();
+                                                                                    reader.onload = (function(theFile) {
+                                                                                          return function(e) {
+                                                                                                // Insertamos la imagen
+                                                                                                document.getElementById("list").innerHTML = ['<img class="thumb thumbnail" src="', e.target.result, '" width="100%" title="', escape(theFile.name), '"/>'].join('');
+                                                                                          };
+                                                                                    })(f);
+                                                                                    reader.readAsDataURL(f);
+                                                                              }
+                                                                        }
+                                                                        document.getElementById('file').addEventListener('change', archivo, false);
+                                                                  </script>
+
                                                             </div>
-                                                      </form>
+                                                      </div>
                                                 </div>
-                                          </div>
+                                          </form>
+
                                     </div>
 
                               </div>

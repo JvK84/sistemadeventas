@@ -41,10 +41,10 @@ include('../app/controllers/almacen/show_productos.php');
                                           <div class="row">
                                                 <div class="col-md-12">
                                                       <form action="../app/controllers/almacen/delete_producto.php" method="POST">
-                                                            <input type="text" name="id_producto" class="form-control" value="<?php echo $id_producto_get; ?>" hidden>
+                                                            <input type="text" name="id_producto" class="form-control" value="<?= $id_producto_get; ?>" hidden>
                                                             <div class="form-group">
                                                                   <label for="">Nombre del producto</label>
-                                                                  <input type="text" name="nombre" class="form-control" value="<?php echo $nombres; ?>" disabled>
+                                                                  <input type="text" name="nombre" class="form-control" value="<?= $nombres; ?>" disabled>
                                                             </div>
                                                             <div class="form-group">
                                                                   <a href="index.php" class="btn btn-secondary">Cancelar</a>

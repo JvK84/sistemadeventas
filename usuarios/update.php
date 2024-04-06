@@ -42,14 +42,14 @@ include('../app/controllers/roles/listado_roles.php');
                                           <div class="row">
                                                 <div class="col-md-12">
                                                       <form action="../app/controllers/usuarios/update.php" method="POST">
-                                                            <input type="text" name="id_usuario" class="form-control" value="<?php echo $id_usuario_get; ?>" hidden>
+                                                            <input type="text" name="id_usuario" class="form-control" value="<?= $id_usuario_get; ?>" hidden>
                                                             <div class="form-group">
                                                                   <label for="">Nombre</label>
-                                                                  <input type="text" name="nombres" class="form-control" value="<?php echo $nombres; ?>" required>
+                                                                  <input type="text" name="nombres" class="form-control" value="<?= $nombres; ?>" required>
                                                             </div>
                                                             <div class="form-group">
                                                                   <label for="">Email</label>
-                                                                  <input type="email" name="email" class="form-control" value="<?php echo $email; ?>" required>
+                                                                  <input type="email" name="email" class="form-control" value="<?= $email; ?>" required>
                                                             </div>
                                                             <div class="form-group">
                                                                   <label for="">Rol del usuario</label>
@@ -58,7 +58,7 @@ include('../app/controllers/roles/listado_roles.php');
                                                                         foreach ($roles_datos as $roles_dato) { 
                                                                               $rol_tabla = $roles_dato["rol"];
                                                                               $id_rol = $roles_dato["id_rol"];  ?>
-                                                                              <option value="<?php echo $id_rol ?>" <?php if($rol_tabla == $rol){ ?> selected="selected" <?php } ?> ><?php echo $roles_dato["rol"]; ?> </option>
+                                                                              <option value="<?= $id_rol ?>" <?php if($rol_tabla == $rol){ ?> selected="selected" <?php } ?> ><?= $roles_dato["rol"]; ?> </option>
                                                                         <?php
                                                                         }
                                                                         ?>

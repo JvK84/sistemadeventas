@@ -41,9 +41,9 @@ include('../app/controllers/categorias/show_categoria.php');
                 <div class="col-md-12">
                   <form action="../app/controllers/categorias/update.php" method="POST">
                     <div class="form-group">
-                      <input type="text" name="id_categoria" value="<?php echo $id_categoria_get; ?>" hidden>
+                      <input type="text" name="id_categoria" value="<?= $id_categoria_get; ?>" hidden>
                       <label for="">Nombre de la categoría</label>
-                      <input type="text" name="categoria" class="form-control" value="<?php echo $nombres; ?>">
+                      <input type="text" name="categoria" class="form-control" value="<?= $nombres; ?>">
                     </div>
                     <div class="form-group">
                       <a href="index.php" class="btn btn-secondary">Cancelar</a>

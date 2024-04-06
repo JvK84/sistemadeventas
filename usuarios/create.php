@@ -54,7 +54,7 @@ include('../app/controllers/roles/listado_roles.php');
                       <select name="id_rol" class="form-control">
                         <?php 
                         foreach ($roles_datos as $roles_dato) { ?>
-                          <option value="<?php echo $roles_dato["id_rol"];?>"><?php echo $roles_dato["rol"];?></option>
+                          <option value="<?= $roles_dato["id_rol"];?>"><?= $roles_dato["rol"];?></option>
 
                         <?php
                         }

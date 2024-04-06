@@ -63,17 +63,17 @@ include('../app/controllers/usuarios/listado_usuarios.php');
                     $id_usuario = $usuarios_dato['id_usuario']; ?>
                     <tr>
                       <td>
-                        <center><?php echo $contador = $contador + 1; ?></center>
+                        <center><?= $contador = $contador + 1; ?></center>
                       </td>
-                      <td><?php echo $usuarios_dato['nombres']; ?></td>
-                      <td><?php echo $usuarios_dato['email']; ?></td>
-                      <td><?php echo $usuarios_dato['rol']; ?></td>
+                      <td><?= $usuarios_dato['nombres']; ?></td>
+                      <td><?= $usuarios_dato['email']; ?></td>
+                      <td><?= $usuarios_dato['rol']; ?></td>
                       <td>
                         <center>
                           <div class="btn-group">
-                            <a href="show.php?id=<?php echo $id_usuario; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-eye"></i> Ver</a>
-                            <a href="update.php?id=<?php echo $id_usuario; ?>" type="button" class="btn" style="background-color: #644B86; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
-                            <a href="delete.php?id=<?php echo $id_usuario; ?>" type="button" class="btn" style="background-color: #993C7E; color: white"><i class="fa fa-trash"></i> Borrar</a>
+                            <a href="show.php?id=<?= $id_usuario; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-eye"></i> Ver</a>
+                            <a href="update.php?id=<?= $id_usuario; ?>" type="button" class="btn" style="background-color: #644B86; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
+                            <a href="delete.php?id=<?= $id_usuario; ?>" type="button" class="btn" style="background-color: #993C7E; color: white"><i class="fa fa-trash"></i> Borrar</a>
                           </div>
                         </center>
                       </td>

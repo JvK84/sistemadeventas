@@ -39,50 +39,54 @@ include('../app/controllers/almacen/show_productos.php');
 
                                     <div class="card-body" style="display: block;">
                                           <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-6">
                                                       <div class="form-group">
                                                             <label for="">Código del producto</label>
-                                                            <input type="text" name="codigo" class="form-control" value="<?php echo $codigo; ?>" disabled>
+                                                            <input type="text" name="codigo" class="form-control" value="<?= $codigo; ?>" disabled>
                                                       </div>
                                                       <div class="form-group">
                                                             <label for="">Nombre del producto</label>
-                                                            <input type="text" name="nombres" class="form-control" value="<?php echo $nombres; ?>" disabled>
+                                                            <input type="text" name="nombres" class="form-control" value="<?= $nombres; ?>" disabled>
                                                       </div>
                                                       <div class="form-group">
                                                             <label for="">Descripción del producto</label>
-                                                            <input type="text" name="descripcion" class="form-control" value="<?php echo $descripcion; ?>" disabled>
+                                                            <input type="text" name="descripcion" class="form-control" value="<?= $descripcion; ?>" disabled>
                                                       </div>
                                                       <div class="form-group">
                                                             <label for="">Stock del producto</label>
-                                                            <input type="text" name="stock" class="form-control" value="<?php echo $stock; ?>" disabled>
+                                                            <input type="text" name="stock" class="form-control" value="<?= $stock; ?>" disabled>
                                                       </div>
                                                       <div class="form-group">
                                                             <label for="">Stock minimo del producto</label>
-                                                            <input type="text" name="stock_minimo" class="form-control" value="<?php echo $stock_minimo; ?>" disabled>
+                                                            <input type="text" name="stock_minimo" class="form-control" value="<?= $stock_minimo; ?>" disabled>
                                                       </div>
                                                       <div class="form-group">
                                                             <label for="">Stock maximo del producto</label>
-                                                            <input type="text" name="stock_maximo" class="form-control" value="<?php echo $stock_maximo; ?>" disabled>
-                                                      </div>
-                                                      <div class="form-group">
-                                                            <label for="">Precio de compra del producto</label>
-                                                            <input type="text" name="precio_compra" class="form-control" value="<?php echo $precio_compra; ?>" disabled>
-                                                      </div>
-                                                      <div class="form-group">
-                                                            <label for="">Precio de venta del producto</label>
-                                                            <input type="text" name="precio_venta" class="form-control" value="<?php echo $precio_venta; ?>" disabled>
-                                                      </div>
-                                                      <div class="form-group">
-                                                            <label for="">Fecha de ingreso del producto</label>
-                                                            <input type="text" name="fecha_ingreso" class="form-control" value="<?php echo $fecha_ingreso; ?>" disabled>
-                                                      </div>
-                                                      <div class="form-group">
-                                                            <label for="">Categoria del producto</label>
-                                                            <input type="text" name="categoria" class="form-control" value="<?php echo $categoria; ?>" disabled>
+                                                            <input type="text" name="stock_maximo" class="form-control" value="<?= $stock_maximo; ?>" disabled>
                                                       </div>
                                                       <div class="form-group">
                                                             <a href="index.php" class="btn btn-secondary">Volver</a>
                                                       </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                      <div class="form-group">
+                                                            <label for="">Precio de compra del producto</label>
+                                                            <input type="text" name="precio_compra" class="form-control" value="<?= $precio_compra; ?>" disabled>
+                                                      </div>
+                                                      <div class="form-group">
+                                                            <label for="">Precio de venta del producto</label>
+                                                            <input type="text" name="precio_venta" class="form-control" value="<?= $precio_venta; ?>" disabled>
+                                                      </div>
+                                                      <div class="form-group">
+                                                            <label for="">Fecha de ingreso del producto</label>
+                                                            <input type="text" name="fecha_ingreso" class="form-control" value="<?= $fecha_ingreso; ?>" disabled>
+                                                      </div>
+                                                      <div class="form-group">
+                                                            <label for="">Categoria del producto</label>
+                                                            <input type="text" name="categoria" class="form-control" value="<?= $categoria; ?>" disabled>
+                                                      </div>
+                                                      <label for="">Imagen del producto</label>
+                                                            <center><img src="<?= $URL."/almacen/img_productos/".$imagen;?>" alt="" width="250px"></center>
                                                 </div>
                                           </div>
                                     </div>
