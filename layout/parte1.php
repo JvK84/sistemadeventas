@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="es">
 
 <head>
@@ -60,7 +56,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
       <!-- Sidebar -->
       <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
             <img src="<?= $URL; ?>/public/templates/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
@@ -73,9 +68,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Sidebar Menu -->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-            <li class="nav-item">
+
+            <li class="nav-item" <?php if($rol != "ADMIN") { echo "hidden"; } ?>>
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
@@ -99,7 +93,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </ul>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item" <?php if($rol != "ADMIN") { echo "hidden"; } ?>>
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-address-card"></i>
                 <p>
@@ -114,7 +108,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <p>Listado de roles</p>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" hidden>
                   <a href="<?= $URL; ?>/roles/create.php" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Creación de roles</p>

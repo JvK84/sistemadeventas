@@ -26,7 +26,7 @@ include('app/controllers/roles/listado_roles.php');
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-3 col-6" <?php if($rol != "ADMIN") { echo "hidden"; } ?>>
           <div class="small-box" style="background-color: #394E75; color: white">
             <div class="inner">
               <?php
@@ -47,7 +47,7 @@ include('app/controllers/roles/listado_roles.php');
           </div>
         </div>
 
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-3 col-6"  <?php if($rol != "ADMIN") { echo "hidden"; } ?>>
           <div class="small-box" style="background-color: #394E75; color: white">
             <div class="inner">
               <?php
@@ -59,8 +59,8 @@ include('app/controllers/roles/listado_roles.php');
               <h3><?= $contador_de_roles; ?></h3>
               <p>Roles Registrados</p>
             </div>
-            <a href="<?= $URL; ?>/roles/create.php">
-              <div class="icon">
+
+            <div class="icon">
                 <i class="fas fa-user-plus"></i>
               </div>
             </a>

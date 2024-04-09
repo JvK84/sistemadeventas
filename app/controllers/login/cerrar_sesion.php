@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by Javier Alonso González
- * 
- * 
- */
 
 include('../../config.php');
 

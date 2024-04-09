@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by Javier Alonso González
- * 
- * 
- */
 
 include('../../config.php');
 
@@ -22,6 +17,7 @@ foreach($usuarios as $usuario){
     $nombres = $usuario['nombres'];
     $password_user_tabla = $usuario['password_user'];
     $rol = $usuario['rol'];
+    $id_rol = $usuario['id_rol'];
 }
 
 if($contador > 0 && (password_verify($password_user, $password_user_tabla))){
@@ -30,6 +26,7 @@ if($contador > 0 && (password_verify($password_user, $password_user_tabla))){
     $_SESSION['icono'] = "success";
     $_SESSION['sesion_email'] = $email;
     $_SESSION['sesion_nombre'] = $nombres;
+    $_SESSION['id_rol'] = $id_rol;
     $_SESSION['sesion_rol'] = $rol;
     header('Location: '.$URL.'/index.php');
 } else {

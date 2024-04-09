@@ -62,7 +62,7 @@ include('../app/controllers/roles/listado_roles.php');
                       <td><?= $rol_dato['rol']; ?></td>
                       <td>
                         <center>
-                          <div class="btn-group">
+                          <div class="btn-group" <?php if($rol_dato['rol'] == "ADMIN") { echo "hidden"; } ?>>
                             <a href="update.php?id=<?= $id_rol; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
                           </div>
                         </center>

@@ -1,9 +1,5 @@
 <?php 
-/**
- * Created by Javier Alonso González
- * User: imper84
- * Date: 29-02-2024
- */
+
 define('SERVIDOR','localhost');
 define('USUARIO','root');
 define('PASSWORD','');
