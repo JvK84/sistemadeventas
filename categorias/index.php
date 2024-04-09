@@ -27,7 +27,7 @@ include('../app/controllers/categorias/listado_categorias.php');
       <div class="row">
         <div class="col-md-8">
           <div class="card">
-            <div class="card-header" style="background-color: #394E75; color: white">
+            <div class="card-header first">
               <h3 class="card-title">Categorías registradas</h3>
               <div class="card-tools">
                 <button class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -63,9 +63,9 @@ include('../app/controllers/categorias/listado_categorias.php');
                       <td>
                         <center>
                           <div class="btn-group">
-                            <a href="show.php?id_categoria=<?= $id_categoria; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-eye"></i> Ver</a>
-                            <a href="update.php?id_categoria=<?= $id_categoria; ?>" type="button" class="btn" style="background-color: #644B86; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
-                            <a href="delete.php?id_categoria=<?= $id_categoria; ?>" type="button" class="btn" style="background-color: #993C7E; color: white"><i class="fa fa-trash"></i> Borrar</a>
+                            <a href="show.php?id_categoria=<?= $id_categoria; ?>" type="button" class="btn first"><i class="fa fa-eye"></i> Ver</a>
+                            <a href="update.php?id_categoria=<?= $id_categoria; ?>" type="button" class="btn second"><i class="fa fa-pencil-alt"></i> Editar</a>
+                            <a href="delete.php?id_categoria=<?= $id_categoria; ?>" type="button" class="btn third"><i class="fa fa-trash"></i> Borrar</a>
                           </div>
                         </center>
                       </td>

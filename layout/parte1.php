@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="<?= $URL; ?>/public/templates/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= $URL; ?>/public/templates/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?= $URL; ?>/public/css/main.css">
   <!-- Sweetalert library-->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- DataTables -->

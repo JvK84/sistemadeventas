@@ -28,7 +28,7 @@ include('../app/controllers/almacen/listado_usuario.php');
                   <div class="row">
                         <div class="col-md-6">
                               <div class="card">
-                                    <div class="card-header" style="background-color: #394E75; color: white">
+                                    <div class="card-header first">
                                           <h3 class="card-title">Introduzca los datos del nuevo producto</h3>
                                           <div class="card-tools">
                                                 <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -67,7 +67,7 @@ include('../app/controllers/almacen/listado_usuario.php');
                                                             </div>
                                                             <div class="form-group">
                                                                   <a href="index.php" class="btn btn-secondary">Cancelar</a>
-                                                                  <button type="submit" class="btn" style="background-color: #394E75; color: white">Guardar</button>
+                                                                  <button type="submit" class="btn first">Guardar</button>
                                                             </div>
                                                       </div>
                                                       <div class="col-md-6">

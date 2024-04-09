@@ -28,7 +28,7 @@ include('../app/controllers/categorias/show_categoria.php');
                   <div class="row">
                         <div class="col-md-6">
                               <div class="card">
-                                    <div class="card-header" style="background-color: #394E75; color: white">
+                                    <div class="card-header first">
                                           <h3 class="card-title">Visualización de la categoría</h3>
                                           <div class="card-tools">
                                                 <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>

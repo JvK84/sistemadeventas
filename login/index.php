@@ -54,7 +54,7 @@
           <div class="row">
             <!-- /.col -->
             <div class="col-12">
-              <button type="submit" class="btn btn-block" style="background-color: #394E75; color: white">Sign In</button>
+              <button type="submit" class="btn btn-block first">Sign In</button>
             </div>
             <!-- /.col -->
           </div>

@@ -27,7 +27,7 @@ include('app/controllers/roles/listado_roles.php');
 
       <div class="row">
         <div class="col-lg-3 col-6" <?php if($rol != "ADMIN") { echo "hidden"; } ?>>
-          <div class="small-box" style="background-color: #394E75; color: white">
+          <div class="small-box first">
             <div class="inner">
               <?php
               $contador_de_usuarios = 0;
@@ -48,7 +48,7 @@ include('app/controllers/roles/listado_roles.php');
         </div>
 
         <div class="col-lg-3 col-6"  <?php if($rol != "ADMIN") { echo "hidden"; } ?>>
-          <div class="small-box" style="background-color: #394E75; color: white">
+          <div class="small-box first">
             <div class="inner">
               <?php
               $contador_de_roles = 0;
@@ -72,7 +72,7 @@ include('app/controllers/roles/listado_roles.php');
         <div class="row">
 
         <div class="col-lg-3 col-6">
-          <div class="small-box" style="background-color: #394E75; color: white">
+          <div class="small-box first">
             <div class="inner">
               <?php
               $contador_de_roles = 0;
@@ -93,7 +93,7 @@ include('app/controllers/roles/listado_roles.php');
         </div>
         
         <div class="col-lg-3 col-6">
-          <div class="small-box" style="background-color: #394E75; color: white">
+          <div class="small-box first">
             <div class="inner">
               <?php
               $contador_de_roles = 0;

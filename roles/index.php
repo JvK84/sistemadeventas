@@ -27,7 +27,7 @@ include('../app/controllers/roles/listado_roles.php');
       <div class="row">
         <div class="col-md-8">
           <div class="card">
-            <div class="card-header" style="background-color: #394E75; color: white">
+            <div class="card-header first">
               <h3 class="card-title">Roles registrados</h3>
               <div class="card-tools">
                 <button class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -63,7 +63,7 @@ include('../app/controllers/roles/listado_roles.php');
                       <td>
                         <center>
                           <div class="btn-group" <?php if($rol_dato['rol'] == "ADMIN") { echo "hidden"; } ?>>
-                            <a href="update.php?id=<?= $id_rol; ?>" type="button" class="btn" style="background-color: #394E75; color: white"><i class="fa fa-pencil-alt"></i> Editar</a>
+                            <a href="update.php?id=<?= $id_rol; ?>" type="button" class="btn first"><i class="fa fa-pencil-alt"></i> Editar</a>
                           </div>
                         </center>
                       </td>
